@@ -65,6 +65,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
 /* Responsividad */
 @media (max-width: 900px) {
   .products-container {
@@ -163,4 +164,36 @@ h2 {
 
 #checkout-btn:hover {
   opacity: 0.9;
+}
+
+.product.resaltado {
+  border: 2px solid #FFC107; 
+  background-color: rgba(0, 48, 135, 0.1);
+}
+
+#menu-contextual {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  min-width: 150px;
+  font-family: Arial, sans-serif;
+}
+
+#menu-contextual button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#menu-contextual button:hover {
+  background: #f0f0f0;
 }
